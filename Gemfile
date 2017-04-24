@@ -1,5 +1,5 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
+ruby RUBY_VERSION
 
-# Specify your gem's dependencies in ghoost-theme.gemspec
-gemspec
-
+gem "jekyll"
+gem "pygments.rb"

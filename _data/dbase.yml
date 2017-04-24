@@ -1,0 +1,46 @@
+# ________________________________________________________________________________________________ #
+# Attention! Change only the values of the variables! Do not change the position of the variables. #
+# ________________________________________________________________________________________________-#
+
+# Category: Site Config.
+site:
+  config:
+    title: Golink
+    description: Golink - A minimal theme for Jekyll.
+    favicon:
+    # Year your site was launched.
+    launch:
+    avatar: golink.svg
+    metatag:
+      google-site-verification:
+      type: "WebSite"
+      locale: "en"
+      expires:  # E.g: "Sat, 24 Dec 2017 00:10:00 GMT"
+      cache-control:  # E.g: "max-age=29030400, public" # Default: public / max-age=29030400
+      tags: "Golink, Theme, Jekyll"
+      refresh-time:
+    # Config for Google Analytics.  Note: Must have Google Analytics Tracking ID.
+    google:
+      analytics:
+        enable: false # Use: true | false
+        id: "" # tracking id, e.g. "UA-000000-01"
+    footer:
+      message: A minimal theme for Jekyll.
+
+# Category: User Data.
+userdata:
+  person_name: Golink
+  user_description: A minimal theme for Jekyll
+  email: youremail@domain.com
+  # Put the link you want here! You need to create the following structure for each link
+  # - title:
+  #   icon:
+  #   url:
+  # Note: (In 'icon' you must specify the Awesome Font icon. See: http://fontawesome.io/icons).
+  golink:
+    - title: GitHub
+      icon: fa-github
+      url: https://github.com/williamcanin/golink
+    - title: Gem
+      icon: fa-diamond
+      url: https://rubygems.org/gems/golink

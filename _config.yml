@@ -1,0 +1,15 @@
+baseurl: "" # the subpath of your site, e.g. /blog
+url: ""  # the base hostname & protocol for your site, e.g. http://example.com
+
+# Config SASS
+sass:
+  sass_dir: _sass
+  style: compressed
+# Build settings
+markdown: kramdown
+# Remove file from compilation.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - Rakefile
