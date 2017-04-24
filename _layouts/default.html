@@ -1,0 +1,46 @@
+---
+layout: compress
+---
+
+<!-- Include Data Base  -->
+{% include dbase/dbase %}
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  {% include partials/head.html %}
+<body>
+  <div class="default">
+    <div class="container">
+      <div class="row wow fadeInDown">
+        <div class="col-sm-4 col-avatar">
+          {% if dbase.site.config.avatar %}
+            <img class="img-responsive avatar" src="{{ '/assets/images/avatar' | prepend: site.url | prepend: site.baseurl }}/{{ dbase.site.config.avatar }}" alt="{{ dbase.site.config.title }}">
+          {% endif %}
+        </div>
+        <div class="col-sm-8 col-content">
+          <p class="name">{{ dbase.userdata.person_name }}</p>
+          <p class="description">{{ dbase.userdata.user_description }}</p>
+          <p class="golink">
+            {% if dbase.userdata.email %}
+              <a class="link" href="mailto: {{ dbase.userdata.email | encode_email }}">
+                <i class="fa fa-envelope icon" aria-hidden="true"></i><span class="link-text">e-mail</span>
+              </a>
+            {% endif %}
+            {% for hash in dbase %}
+              {% assign _getdata = hash[1] %}
+              {% assign golink = _getdata.golink %}
+              {% for item in golink %}
+                <a class="link" href="{{ item.url }}" onclick="_gaq.push(['_trackEvent', 'linkTo', '{{item.title}}', this.href]);">
+                  <i class="fa {{ item.icon }} icon" aria-hidden="true"></i><span class="link-text">{{ item.title }}</span>
+                </a>
+              {% endfor %}
+            {% endfor %}
+          </p>
+        </div>
+      </div>
+    </div>
+    {% include partials/footer.html %}
+  </div>
+  {% include partials/src.html %}
+</body>
+</html>

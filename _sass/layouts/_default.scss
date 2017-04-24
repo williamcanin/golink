@@ -1,0 +1,88 @@
+/* Layout default - Home */
+
+.default {
+  height: 100vh;
+  .container {
+    // Adjusts in the center of the screen
+    position: absolute;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 500px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    .col-avatar{
+      padding: 0;
+      margin: 0;
+      .avatar{
+        border: 2px solid white;
+        @include border-radius(50%);
+        width: 128px;
+        height: 128px;
+        @include box-shadow(0px, 0px, 20px, rgba(0, 0, 0, 0.2));
+        // center block
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+    .col-content{
+      text-align: left;
+      @media (max-width: 600px) {
+        text-align: center;
+      }
+      margin: 0;
+      padding: 0;
+      .name{
+        font-family: $font-family-primary;
+        font-size: 47px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $name-home-color;
+        padding: 0;
+        margin: 0;
+      }
+      .description{
+         @include transform(translate( 3px, -14px));
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #999;
+      }
+      .nickname{
+        font-size: 22px;
+        color: #999;
+      }
+      .golink{
+        font-size: 22px;
+        @include transform(translate( -1px, -30px));
+        text-align: center;
+        .link{
+          float: left;
+          @media (max-width: 575px) {
+            float: none;
+          }
+          position: relative;
+          padding: 0px 7px;
+          white-space: nowrap;
+          color: rgba($fa-links-home-color, .5);
+          i{}
+          .link-text{
+            visibility: hidden;
+            font-size: 14px;
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            @include transform(translate(-50%, 0%));
+          }
+          &:hover {
+            color: rgba($fa-links-home-color, 1);
+            .link-text {
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+}

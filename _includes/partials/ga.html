@@ -1,0 +1,16 @@
+{% if dbase.site.config.google.analytics.enable == true and dbase.site.config.google.analytics.id %}
+  <script>
+    if (window.location.hostname == "{{ site.url }}{{ site.baseurl }}") {
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '{{ dbase.site.config.google.analytics.id }}']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    } else { _gaq = []; };
+  </script>
+{% endif %}

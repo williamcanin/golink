@@ -1,0 +1,66 @@
+<!-- Include Data Base  -->
+{% include dbase/dbase %}
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.title %}{{page.title}} | {{ dbase.site.config.title }} {% else %} {{ dbase.site.config.title }} | {{ dbase.site.config.description }} {% endif %}</title>
+  <meta name=description content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ dbase.site.config.description }}{% endif %}">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  {% if dbase.site.config.metatag.google-site-verification %}
+  <meta name="google-site-verification" content="{{ dbase.site.config.metatag.google-site-verification }}">
+  {% endif %}
+  {% if dbase.site.config.metatag.expires %}
+  <meta http-equiv="expires" content="{{ dbase.site.config.metatag.expires }}">
+  {% endif %}
+  {% if dbase.site.config.metatag.cache-control %}
+  <meta http-equiv="cache-control" content="{{ dbase.site.config.metatag.cache-control }}"/>
+  {% else %}
+  <meta http-equiv="cache-control" content="public"/>
+  {% endif %}
+  <meta http-equiv="Pragma" content="public">
+  <meta name="keywords" content="{{ dbase.site.config.metatag.tags }}" />
+  <meta property="og:locale" content="{{ dbase.site.config.metatag.locale }}" />
+  <meta property="og:site_name" content="{{ dbase.site.config.title }}" />
+  <meta property="og:type" content="{{ dbase.site.config.metatag.type }}" />
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+  <meta property="og:description" content="{{ dbase.site.config.description }}" />
+  <meta property="og:title" content="{{ page.title }} - {{ dbase.site.config.title }}" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ dbase.site.config.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  {% if page.url == "/404.html" and dbase.site.config.metatag.refresh-time %}
+  <meta http-equiv="refresh" content="{{ dbase.site.config.metatag.refresh-time }}; url={{ site.url }}{{ site.baseurl }}/">
+  {% endif %}
+  <script type="application/ld+json">
+    {"@context": "http://schema.org",
+    "@type": "{{ dbase.site.config.metatag.type }}",
+    "headline": "{{ dbase.site.config.title }}",
+    "author": {"@type": "Person",
+    "name": {"{{ dbase.site.config.title }}"}},
+    "description": "{{ dbase.site.config.description }}",
+    "url": "{{ site.url }}{{ site.baseurl }}"}
+  </script>
+
+  {% if dbase.site.config.favicon %}
+   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon' | prepend: site.baseurl | prepend: site.url }}/{{ dbase.site.config.favicon }}">
+  {% endif %}
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+  <!-- Fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+  <!-- Vendor  -->
+  <link rel="stylesheet" href="{{ '/assets/stylesheets/vendor/animate.min.css' | prepend: site.baseurl | prepend: site.url }}">
+
+  <!-- Style Default -->
+  <link rel="stylesheet" href="{{ '/assets/stylesheets/main.css' | prepend: site.baseurl | prepend: site.url }}">
+
+  {% if dbase.site.config.google.analytics.enable == true and dbase.site.config.google.analytics.id %}
+    {% include partials/ga.html %}
+  {% endif %}
+
+</head>

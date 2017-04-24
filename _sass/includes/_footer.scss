@@ -1,0 +1,35 @@
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: $footer-background-color;
+  text-align: center;
+  font-size: 14px;
+  color: $footer-color;
+  font-family: $font-family-primary;
+  border-top: 0.1rem solid $footer-border-color;
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+  .copyright{}
+  .message{
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+  .madeby{
+    span{
+      a{
+        color: $footer-color-link;
+        text-decoration: underline;
+      }
+    }
+  }
+  .top{
+    color: $footer-color-link;
+    font-size: 4rem;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+  }
+}

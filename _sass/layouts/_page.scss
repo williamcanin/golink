@@ -1,0 +1,25 @@
+/* Layout Page (Error 404) */
+
+.page{
+  .container{
+    position: absolute;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 500px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    .title{
+      font-family: $font-family-secondary;
+    }
+    .content{
+      font-family: $font-family-primary;
+      font-size: 1.3em;
+      letter-spacing: 0.1em;
+      .goback{
+        background-color: $btn-goback-background;
+        color: $btn-goback-color;
+      }
+    }
+  }
+}

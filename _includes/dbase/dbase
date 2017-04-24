@@ -1,0 +1,8 @@
+{% comment %}
+These settings in this file are responsible for loading site settings. Do not change or remove this file.
+Att. William Canin :)
+{% endcomment %}
+
+{% assign dbase = site.data.dbase %}
+
+{% assign theme_name = "golink" %}
