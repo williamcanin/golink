@@ -10,7 +10,6 @@ require "golink"
 # require "pry"
 # Pry.start
 
-# require "irb"
-# IRB.start(__FILE__)
+min = Jekyll::Golink::Theme::Main.new
 
-puts "#{Jekyll::Golink::Theme::VERSION}"
+min.test_
