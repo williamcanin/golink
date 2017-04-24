@@ -13,4 +13,4 @@ require "golink"
 system ("gem uninstall #{Jekyll::Golink::Theme::NAME_GEM}")
 `git add .`
 `git commit -m "Update - #{Time.now}"`
-# `rake build; rake install;`
+`rake build; rake install;`
