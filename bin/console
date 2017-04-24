@@ -10,6 +10,7 @@ require "golink"
 # require "pry"
 # Pry.start
 
-min = Jekyll::Golink::Theme::Main.new
-
-min.test_
+`gem uninstall #{Jekyll::Golink::Theme::NAME_GEM}`
+`git add .`
+`git commit -m "Update - #{Time.now}"`
+`rake build; rake install`
