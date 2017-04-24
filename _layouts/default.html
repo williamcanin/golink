@@ -14,7 +14,7 @@ layout: compress
       <div class="row wow fadeInDown">
         <div class="col-sm-4 col-avatar">
           {% if dbase.site.config.avatar %}
-            <img class="img-responsive avatar" src="{{ '/assets/images/avatar' | prepend: site.url | prepend: site.baseurl }}/{{ dbase.site.config.avatar }}" alt="{{ dbase.site.config.title }}">
+            <img class="img-responsive avatar" src="{{ '/assets/images/avatar' | prepend: site.baseurl | prepend: site.url }}/{{ dbase.site.config.avatar }}" alt="{{ dbase.site.config.title }}">
           {% endif %}
         </div>
         <div class="col-sm-8 col-content">
