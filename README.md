@@ -1,6 +1,6 @@
-# [Go!link](https://github.com/williamcanin/golink)
+# [Golink](https://github.com/williamcanin/golink)
 
-Go!link is a minimal theme for [Jekyll](https://jekyllrb.com), especially for those who want to have a page only to redirect links to other addresses.
+Golink is a minimal theme for [Jekyll](https://jekyllrb.com), especially for those who want to have a page only to redirect links to other addresses.
 
 ![Go!Link Theme](https://raw.githubusercontent.com/williamcanin/golink/master/screenshot.png)
 
@@ -8,7 +8,7 @@ Go!link is a minimal theme for [Jekyll](https://jekyllrb.com), especially for th
 
 * [Feature](https://github.com/williamcanin/golink/#feature)
 * [Requeriments](https://github.com/williamcanin/golink/#requeriments)
-* [Usage](https://github.com/williamcanin/golink/#usage)
+* [Usage and Install](https://github.com/williamcanin/golink/#usage-and-install)
 * [Custom Appearance](https://github.com/williamcanin/golink/#custom-appearance)
 * [Deploy](https://github.com/williamcanin/golink/#deploy)
 * [Demo](https://github.com/williamcanin/golink/#demo)
@@ -36,12 +36,15 @@ Go!link is a minimal theme for [Jekyll](https://jekyllrb.com), especially for th
 
 | Requerid        | How to check        | How to install  |
 | --------------- | ------------------- | -------------- | 
-| Git             | `git --version`     | [Git](http://git-scm.com/) |
-| Ruby            | `ruby -v`           | [Ruby](https://www.ruby-lang.org) |
-| Gem             | `gem -v`            | **Ruby** contains **Gem** |
-| Bundler         | `bundler -v`        | `gem install bundler` |
+| ruby            | `ruby -v`           | [Ruby](https://www.ruby-lang.org) |
+| git             | `git --version`     | [Git](http://git-scm.com/) |
+| gem             | `gem -v`            | **Ruby** contains **Gem** |
+| bundler         | `bundler -v`        | `gem install bundler` |
+| jekyll          | `jekyll -v`         | [Jekyll](https://jekyllrb.com/) |
+| rake            | `rake --version`    | `gem install rake` |
+| colorize        | `rake --version`    | `gem list colorize` |
 
-## Usage
+## Usage and Install
 
 1 - Install theme Go!Link:
 
@@ -55,11 +58,22 @@ $ gem install golink
 $ golink init
 ```
 
-Ready! Now just confirm your information. Follow and see.
+3 - Run the command below to install the required plugins for Go! Link.
+
+```
+$ bundle install
+```
+
+4 - Ready! Now, you can run a test running the Jekyll server:
+
+```
+$ jekyll s
+```
+
 
 ## Custom Appearance
 
-Now that the 'Go! Link' is functional, just put your information to leave it with your preference.
+Now that the '**Go!Link**' is functional, just put your information to leave it with your preference.
 
 The settings are contained in the file '**_data/dbase.yml**'. In this file you must change the values according to your need.
 
@@ -85,7 +99,7 @@ Make your opinions on Typing Jekyll Template, in:
 
 ## Versions
 
-You can download the versions without making a clone with Git. Go to [Releases](https://github.com/williamcanin/golink/releases)
+You can view and download the versions in [RubyGems](https://rubygems.org/gems/golink)
 
 ## License and Copyrights
 
@@ -102,6 +116,3 @@ Copyrights: William C. Canin | Copyright © 2017
 * EMail: william.costa.canin@gmail.com    
 * GitHub: [William Canin](http://github.com/williamcanin)
 * Home page: [William Canin](http://williamcanin.github.com)
-
-
-
