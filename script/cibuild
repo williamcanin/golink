@@ -1,6 +1,8 @@
 #! /usr/bin/env bash
 set -e
 
+# File config for Travis
+
 # Directory for build project Jekyll
 build_dir="./test"
 
@@ -17,7 +19,7 @@ bundle install
 printf "\nBundler dependencies installed!\n"
 
 # Start/Build project Go!Link
-jekyll b
+bundle exec jekyll b
 printf "\nGo! Link compiled with Jekyll!\n"
 
 # Remove folder build
