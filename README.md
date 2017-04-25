@@ -29,7 +29,7 @@ Golink is a minimal theme for [Jekyll](https://jekyllrb.com), especially for tho
 **Used plugins**:
 
 * Vendors:
-    - jekyll-email-protect
+    - [jekyll-email-protect](https://github.com/vwochnik/jekyll-email-protect)
 
 
 ## Requeriments
