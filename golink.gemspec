@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select do |f|
-      f.match(%r{^(lib|assets|_layouts|_includes|_sass|LICENSE|README)}i)
+      f.match(%r{^(lib|exe|assets|_layouts|_includes|_sass|LICENSE|README)}i)
   end
 
   spec.required_ruby_version = '>= 2.0.0'
