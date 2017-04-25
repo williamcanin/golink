@@ -1,6 +1,6 @@
-# [Golink](https://github.com/williamcanin/golink)
+# [Go!link](https://github.com/williamcanin/golink)
 
-Golink is a minimal theme for [Jekyll](https://jekyllrb.com), especially for those who want to have a page only to redirect links to other addresses.
+Go!link is a minimal theme for [Jekyll](https://jekyllrb.com), especially for those who want to have a page only to redirect links to other addresses.
 
 ![Go!Link Theme](https://raw.githubusercontent.com/williamcanin/golink/master/screenshot.png)
 
