@@ -8,7 +8,7 @@ Golink is a minimal theme for [Jekyll](https://jekyllrb.com), especially for tho
 
 * [Feature](https://github.com/williamcanin/golink/#feature)
 * [Requeriments](https://github.com/williamcanin/golink/#requeriments)
-* [Usage](https://github.com/williamcanin/golink/#usage)
+* [Usage and Install](https://github.com/williamcanin/golink/#usage-and-install)
 * [Custom Appearance](https://github.com/williamcanin/golink/#custom-appearance)
 * [Deploy](https://github.com/williamcanin/golink/#deploy)
 * [Demo](https://github.com/williamcanin/golink/#demo)
@@ -36,13 +36,15 @@ Golink is a minimal theme for [Jekyll](https://jekyllrb.com), especially for tho
 
 | Requerid        | How to check        | How to install  |
 | --------------- | ------------------- | -------------- | 
-| Jekyll          | `jekyll -v`         | [Jekyll](https://jekyllrb.com/) |
-| Git             | `git --version`     | [Git](http://git-scm.com/) |
-| Ruby            | `ruby -v`           | [Ruby](https://www.ruby-lang.org) |
-| Gem             | `gem -v`            | **Ruby** contains **Gem** |
-| Bundler         | `bundler -v`        | `gem install bundler` |
+| ruby            | `ruby -v`           | [Ruby](https://www.ruby-lang.org) |
+| git             | `git --version`     | [Git](http://git-scm.com/) |
+| gem             | `gem -v`            | **Ruby** contains **Gem** |
+| bundler         | `bundler -v`        | `gem install bundler` |
+| jekyll          | `jekyll -v`         | [Jekyll](https://jekyllrb.com/) |
+| rake            | `rake --version`    | `gem install rake` |
+| colorize        | `rake --version`    | `gem list colorize` |
 
-## Usage
+## Usage and Install
 
 1 - Install theme Go!Link:
 
@@ -56,7 +58,13 @@ $ gem install golink
 $ golink init
 ```
 
-3 - Ready! Now, you can run a test running the Jekyll server:
+3 - Run the command below to install the required plugins for Go! Link.
+
+```
+$ bundle install
+```
+
+4 - Ready! Now, you can run a test running the Jekyll server:
 
 ```
 $ jekyll s
