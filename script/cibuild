@@ -6,18 +6,22 @@ build_dir="./test"
 
 # Create and enter folder test
 mkdir "$build_dir"; cd "$build_dir";
+printf "\nTest directory created!\n"
 
 # Start structure Go!Link
-golink -i
+golink -i; ls
+printf "\nStructure Go! Link created!\n"
 
 # Download dependencies
 bundle install
+printf "\nBundler dependencies installed!\n"
 
 # Start/Build project Go!Link
 jekyll b
+printf "\nGo! Link compiled with Jekyll!\n"
 
 # Remove folder build
 cd ..; rm -rf "$build_dir"
 
-printf "\nDone! Test Go!Link\n"
+printf "\nDone! Test Go!Link competed!\n"
 
