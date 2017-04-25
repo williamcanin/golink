@@ -1,0 +1,23 @@
+#! /usr/bin/env bash
+set -e
+
+# Directory for build project Jekyll
+build_dir="./test"
+
+# Create and enter folder test
+mkdir "$build_dir"; cd "$build_dir";
+
+# Start structure Go!Link
+golink -i
+
+# Download dependencies
+bundle install
+
+# Start/Build project Go!Link
+jekyll b
+
+# Remove folder build
+cd ..; rm -rf "$build_dir"
+
+printf "\nDone! Test Go!Link\n"
+
