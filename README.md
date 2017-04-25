@@ -1,7 +1,6 @@
 # [Golink](https://github.com/williamcanin/golink)
 
 [![Gem Version](https://badge.fury.io/rb/golink.svg)](https://badge.fury.io/rb/golink)
-
 [![Dependency Status](https://gemnasium.com/badges/github.com/williamcanin/golink.svg)](https://gemnasium.com/github.com/williamcanin/golink)
 
 
