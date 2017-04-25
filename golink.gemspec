@@ -27,9 +27,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "jekyll", "~> 3.4", "~> 3.4.3"
-  spec.add_development_dependency "jekyll-email-protect", "~> 1.0", "~> 1.0.3"
+  # Add runtime dependency
+  spec.add_runtime_dependency "jekyll", "~> 3.4", "~> 3.4.3"
+  spec.add_runtime_dependency "colorize", "~> 0.8","~> 0.8.1"
+
   spec.add_development_dependency "bundler", "~> 1.14", "~> 1.14.6"
-  spec.add_development_dependency "colorize", "~> 0.8","~> 0.8.1"
   spec.add_development_dependency "rake", "~> 12.0", "~> 12.0.0"
 end
