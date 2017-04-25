@@ -42,7 +42,7 @@ Golink is a minimal theme for [Jekyll](https://jekyllrb.com), especially for tho
 | bundler         | `bundler -v`        | `gem install bundler` |
 | jekyll          | `jekyll -v`         | [Jekyll](https://jekyllrb.com/) |
 | rake            | `rake --version`    | `gem install rake` |
-| colorize        | `rake --version`    | `gem list colorize` |
+| colorize        | `gem list colorize` | `gem install colorize` |
 
 ## Usage and Install
 
