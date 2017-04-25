@@ -36,6 +36,7 @@ Golink is a minimal theme for [Jekyll](https://jekyllrb.com), especially for tho
 
 | Requerid        | How to check        | How to install  |
 | --------------- | ------------------- | -------------- | 
+| Jekyll          | `jekyll -v`         | [Jekyll](https://jekyllrb.com/) |
 | Git             | `git --version`     | [Git](http://git-scm.com/) |
 | Ruby            | `ruby -v`           | [Ruby](https://www.ruby-lang.org) |
 | Gem             | `gem -v`            | **Ruby** contains **Gem** |
@@ -55,11 +56,16 @@ $ gem install golink
 $ golink init
 ```
 
-Ready! Now just confirm your information. Follow and see.
+3 - Ready! Now, you can run a test running the Jekyll server:
+
+```
+$ jekyll s
+```
+
 
 ## Custom Appearance
 
-Now that the 'Go! Link' is functional, just put your information to leave it with your preference.
+Now that the '**Go!Link**' is functional, just put your information to leave it with your preference.
 
 The settings are contained in the file '**_data/dbase.yml**'. In this file you must change the values according to your need.
 
