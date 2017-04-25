@@ -85,7 +85,7 @@ Make your opinions on Typing Jekyll Template, in:
 
 ## Versions
 
-You can download the versions without making a clone with Git. Go to [Releases](https://github.com/williamcanin/golink/releases)
+You can view and download the versions in [RubyGems](https://rubygems.org/gems/golink)
 
 ## License and Copyrights
 
