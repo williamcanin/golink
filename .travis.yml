@@ -1,7 +1,7 @@
-language: ruby
 sudo: false
-cache: bundler
+language: ruby
 rvm:
+  - 2.3.0
   - 2.0.0
 install:
   - gem install golink
@@ -13,3 +13,5 @@ script:
 branches:
   only:
     - master
+notifications:
+  email: false
