@@ -15,7 +15,7 @@ golink -i; ls
 printf "\nStructure Go! Link created!\n"
 
 # Download dependencies
-gem install jekyll-email-protect
+bundle install; gem install jekyll-email-protect
 printf "\nDependencies installed!\n"
 
 # Start/Build project Go!Link
