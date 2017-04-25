@@ -3,21 +3,13 @@ sudo: false
 cache: bundler
 rvm:
   - 2.0.0
+install:
+  - gem install golink
 before_install:
   - gem update --system
-  - gem update --remote bundler
-before_script:
-  - git config --global user.name "$(git --no-pager show --no-patch --format='%an')"
-  - git config --global user.email "$(git --no-pager show --no-patch --format='%ae')"
+  - gem install bundler
 script:
-  - git clone -b gh-pages --depth 1 --quiet "https://${TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git" _site
-  - rm -rf _site/*
-  - bundle exec jekyll build
-after_success:
-  - cd _site
-  - git add -A
-  - git commit -m "Updated to $(git rev-parse --short $TRAVIS_COMMIT) at $(date -u +'%Y-%m-%d %H:%M:%S %Z')"
-  - git push "https://${TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git" gh-pages --quiet
+  - script/cibuild
 branches:
   only:
     - master
