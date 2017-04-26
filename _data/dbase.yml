@@ -5,7 +5,7 @@
 # Category: Site Config.
 site:
   config:
-    title: Golink
+    title: Go!link
     description: Golink - A minimal theme for Jekyll.
     favicon: favicon-golink.png
     # Year your site was launched.
@@ -29,7 +29,7 @@ site:
 
 # Category: User Data.
 userdata:
-  person_name: Golink
+  person_name: Go!link
   user_description: A minimal theme for Jekyll
   email: # E.g: your_name@domain.com
   # Put the link you want here! You need to create the following structure for each link
