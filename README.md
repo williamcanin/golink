@@ -1,6 +1,12 @@
-# [Golink](https://github.com/williamcanin/golink)
+# [Go!link](https://github.com/williamcanin/golink)
 
-Golink is a minimal theme for [Jekyll](https://jekyllrb.com), especially for those who want to have a page only to redirect links to other addresses.
+[![Gem Version](https://badge.fury.io/rb/golink.svg)](https://badge.fury.io/rb/golink)
+[![Dependency Status](https://gemnasium.com/badges/github.com/williamcanin/golink.svg)](https://gemnasium.com/github.com/williamcanin/golink)
+[![Build Status](https://travis-ci.org/williamcanin/golink.svg?branch=master)](https://travis-ci.org/williamcanin/golink)
+[![security](https://hakiri.io/github/williamcanin/golink/master.svg)](https://hakiri.io/github/williamcanin/golink/master)
+
+
+Go!link is a minimal theme for [Jekyll](https://jekyllrb.com), especially for those who want to have a page only to redirect links to other addresses.
 
 ![Go!Link Theme](https://raw.githubusercontent.com/williamcanin/golink/master/screenshot.png)
 
@@ -29,7 +35,7 @@ Golink is a minimal theme for [Jekyll](https://jekyllrb.com), especially for tho
 **Used plugins**:
 
 * Vendors:
-    - jekyll-email-protect
+    - [jekyll-email-protect](https://github.com/vwochnik/jekyll-email-protect)
 
 
 ## Requeriments
@@ -67,7 +73,7 @@ $ bundle install
 4 - Ready! Now, you can run a test running the Jekyll server:
 
 ```
-$ jekyll s
+$ bundle exec jekyll serve
 ```
 
 
@@ -116,3 +122,6 @@ Copyrights: William C. Canin | Copyright © 2017
 * EMail: william.costa.canin@gmail.com    
 * GitHub: [William Canin](http://github.com/williamcanin)
 * Home page: [William Canin](http://williamcanin.github.com)
+
+
+
