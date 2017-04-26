@@ -73,7 +73,7 @@ $ bundle install
 4 - Ready! Now, you can run a test running the Jekyll server:
 
 ```
-$ jekyll s
+$ bundle exec jekyll serve
 ```
 
 
