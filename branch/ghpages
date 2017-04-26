@@ -1,0 +1,8 @@
+#!/bin/bash
+
+jekyll b
+cd _site
+git remote add origin git@github.com:williamcanin/golink.git
+git add .
+git commit -m "Update - $(date)"
+git push origin gh-pages
