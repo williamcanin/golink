@@ -15,3 +15,5 @@ exclude:
   - Rakefile
   - Makefile
   - screenshot.png
+  - pkg
+  - branch
