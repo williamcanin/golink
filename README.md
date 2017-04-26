@@ -1,4 +1,4 @@
-# [Golink](https://github.com/williamcanin/golink)
+# [Go!link](https://github.com/williamcanin/golink)
 
 [![Gem Version](https://badge.fury.io/rb/golink.svg)](https://badge.fury.io/rb/golink)
 [![Dependency Status](https://gemnasium.com/badges/github.com/williamcanin/golink.svg)](https://gemnasium.com/github.com/williamcanin/golink)
@@ -6,7 +6,7 @@
 [![security](https://hakiri.io/github/williamcanin/golink/master.svg)](https://hakiri.io/github/williamcanin/golink/master)
 
 
-Golink is a minimal theme for [Jekyll](https://jekyllrb.com), especially for those who want to have a page only to redirect links to other addresses.
+Go!link is a minimal theme for [Jekyll](https://jekyllrb.com), especially for those who want to have a page only to redirect links to other addresses.
 
 ![Go!Link Theme](https://raw.githubusercontent.com/williamcanin/golink/master/screenshot.png)
 
