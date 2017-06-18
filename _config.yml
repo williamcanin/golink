@@ -1,5 +1,5 @@
 baseurl: "/golink" # the subpath of your site, e.g. /blog
-url: "https://williamcanin.com"  # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://williamcanin.me"  # the base hostname & protocol for your site, e.g. http://example.com
 
 # Config SASS
 sass:
