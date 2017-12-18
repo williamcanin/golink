@@ -2,7 +2,7 @@ module Jekyll
   module Golink
     module Theme
       module Misc
-        
+
         # Method for create config bundle vendor
         def create_bundle_vendor_conf(dir, filename)
           File.open("#{dir}/#{filename}", 'w') do |file|
@@ -12,7 +12,6 @@ module Jekyll
           end
         end
 
-        end
       end
     end
   end
