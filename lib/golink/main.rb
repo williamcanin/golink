@@ -41,7 +41,7 @@ module Jekyll
          # Starting method to create file Gemfile
          create_gemfile("Gemfile")
          # Starting method to create file .bundle/config
-         create_bundle_vendor_conf(".bundle/config")
+         create_bundle_vendor_conf(".bundle","config")
          # Starting method to create site database.
          create_dbase("_data","dbase.yml")
          # Success message
