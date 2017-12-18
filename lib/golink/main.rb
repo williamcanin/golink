@@ -13,6 +13,7 @@ module Jekyll
         include Jekyll::Golink::Theme::ConfigYML
         include Jekyll::Golink::Theme::IndexMD
         include Jekyll::Golink::Theme::Dbase
+        include Jekyll::Golink::Theme::Misc
 
         def test_
           puts "Hello! The #{Jekyll::Golink::Theme::NAME} is working, my dear!"
@@ -30,7 +31,7 @@ module Jekyll
             end
 
          # Starting method to create directories
-         create_folders(["assets/images/avatar","assets/images/favicon","_data"])
+         create_folders(["assets/images/avatar","assets/images/favicon","_data", ".bundle"])
          # Starting method to create file 'index.md'
          create_index_md("index.md","default")
          # Starting method to create file '_config.yml'
@@ -39,6 +40,8 @@ module Jekyll
          create_error_page("404.md","/404.html")
          # Starting method to create file Gemfile
          create_gemfile("Gemfile")
+         # Starting method to create file .bundle/config
+         create_bundle_vendor_conf(".bundle/config")
          # Starting method to create site database.
          create_dbase("_data","dbase.yml")
          # Success message
@@ -52,5 +55,3 @@ module Jekyll
     end # module Theme
   end # module Golink
 end # module Jekyll
-
-

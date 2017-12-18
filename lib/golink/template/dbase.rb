@@ -2,7 +2,7 @@ module Jekyll
   module Golink
     module Theme
       module Dbase
-        def create_dbase(dir,filename)
+        def create_dbase(dir, filename)
 
             # Creating the file 'dbase.yml' in the '_data' directory.
             # This file will be created to store entire configuration on the website screen in question of strings.
@@ -61,4 +61,3 @@ module Jekyll
     end
   end
 end
-
