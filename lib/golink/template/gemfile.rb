@@ -11,11 +11,13 @@ module Jekyll
             file.puts "ruby RUBY_VERSION"
             file.puts ""
             file.puts "# Dependencies"
-            file.puts "gem \"rake\", \"~> 12.0\""
-            file.puts "gem \"pygments.rb\", \"~> 1.1\""
+            file.puts "gem \"json\", \"~> 2.1\""
+            file.puts "gem \"bigdecimal\", \"~> 1.3\""
+            file.puts "gem \"rake\", \"~> 12.3\""
+            file.puts "gem \"pygments.rb\", \"~> 1.2\""
             file.puts ""
             file.puts "# Loading Jekyll"
-            file.puts "gem \"jekyll\", \"~> 3.4\""
+            file.puts "gem \"jekyll\", \"~> 3.6\""
             file.puts ""
             file.puts "# Plugins for #{Jekyll::Golink::Theme::NAME}"
             file.puts "group :jekyll_plugins do"
@@ -31,8 +33,3 @@ module Jekyll
     end
   end
 end
-
-
-
-
-
