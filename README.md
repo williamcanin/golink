@@ -96,7 +96,7 @@ Variables: **url** and **baseurl** in the `_config.yml` file according to url Wh
 
 ## Demo
 
-If you want to see the project in action, go here > [Demo](http://williamcanin.github.io/golink/)
+If you want to see the project in action, go here > [Demo](http://williamcanin.me/golink/)
 
 ## Questions
 
