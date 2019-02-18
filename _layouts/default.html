@@ -23,14 +23,14 @@ layout: compress
           <p class="golink">
             {% if dbase.userdata.email %}
               <a class="link" href="mailto: {{ dbase.userdata.email | encode_email }}">
-                <i class="fa fa-envelope icon" aria-hidden="true"></i><span class="link-text">e-mail</span>
+                <i class="fa fa-envelope icon" aria-hidden="true"></i><span class="link-text">E-mail</span>
               </a>
             {% endif %}
             {% for hash in dbase %}
               {% assign _getdata = hash[1] %}
               {% assign golink = _getdata.golink %}
               {% for item in golink %}
-                <a class="link" href="{{ item.url }}" onclick="_gaq.push(['_trackEvent', 'linkTo', '{{item.title}}', this.href]);">
+                <a class="link" href="{{ item.url }}" onclick="_gaq.push(['_trackEvent', 'linkTo', '{{item.title}}', this.href]);" target="_blank">
                   <i class="fa {{ item.icon }} icon" aria-hidden="true"></i><span class="link-text">{{ item.title }}</span>
                 </a>
               {% endfor %}
