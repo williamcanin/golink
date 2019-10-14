@@ -21,16 +21,16 @@ Gem::Specification.new do |spec|
       f.match(%r{^(lib|exe|assets|_layouts|_includes|_sass|LICENSE|README)}i)
   end
 
-  spec.required_ruby_version = '>= 2.5.0'
+  spec.required_ruby_version = '>= 2.6.0'
 
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
   # Add runtime dependency
-  spec.add_runtime_dependency "jekyll", "~> 3.8", "~> 3.8.5"
+  spec.add_runtime_dependency "jekyll", "~> 4.0", "~> 4.0.0"
   spec.add_runtime_dependency "colorize", "~> 0.8","~> 0.8.1"
 
-  spec.add_development_dependency "bundler", "~> 2.0", "~> 2.0.1"
-  spec.add_development_dependency "rake", "~> 12.3", "~> 12.3.1"
+  spec.add_development_dependency "bundler", "~> 2.0", "~> 2.0.2"
+  spec.add_development_dependency "rake", "~> 13.0", "~> 13.0.0"
 end
