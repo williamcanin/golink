@@ -14,6 +14,7 @@ module Jekyll
             file.puts "gem 'json', '~> 2.2.0'"
             file.puts "gem 'bigdecimal', '~> 1.4.4'"
             file.puts "gem 'rake', '~> 13.0.0'"
+            file.puts "gem 'colorize', '~> 0.8.1'"
             file.puts ""
             file.puts "# Loading Jekyll"
             file.puts "gem 'jekyll', '~> 4.0.0'"
